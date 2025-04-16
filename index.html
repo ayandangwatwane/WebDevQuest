@@ -1,19 +1,46 @@
 <!DOCTYPE html>
- <html>
-   <!-- The head section contains metadata about the document, like its title, scripts, and style sheets-->
-   <head>
-     <title>Inline CSS style</title>
-   </head>
-   <body>
-     <!--The heading element serve as a heading to a page or section-->
-     <h1 style="color: blue; font-size: 32px; text-align: center;">Heading</h1>
-     <!--The paragraph is in gray colour, font-size of 18px and justified alignment.-->
-     <p style="color: gray; font-size: 18px; text-align: justify;">This is a paragraph.</p>
-     <a href="https://www.example.com" target="_blank"> Example Domain </a>
-     <a href="#about" style="color: blue; text-decoration: none;">About</a>
- 
-     <section id="about" style="height: 100vh; margin-top: 10000px;">
-       <h2>About Us</h2>
-     </section>
-   </body>
- </html>
+<html>
+  <!-- The head section contains metadata about the document, like its title, scripts, and style sheets-->
+  <head>
+    <title>Inline CSS style</title>
+     <style>
+        .heading{
+            color: blue;
+            font-size: 32px;
+            text-align: center;
+        }
+        .paragraph{
+            color: gray;
+            font-size: 18px;
+            text-align: justify;
+        }
+        .internal-link{
+            color: blue;
+            text-decoration: none;
+        }
+        .image{
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+        .about{
+            height: 100vh;
+            margin-top: 10000px;
+        }
+    </style>
+    </head>
+    <body>
+        <!--The heading element serve as a heading to a page or section-->
+        <h1 class="heading">Heading</h1>
+        <!--The paragraph is in gray colour, font-size of 18px and justified alignment.-->
+        <p class="paragraph">This is a paragraph.</p>
+        <a href="https://www.example.com" target="_blank"> Example Domain </a>
+        <a href="#about" class="internal-link">About</a>
+        <hr>
+        <img src="https://picsum.photos/200" alt="variety of images" width="300" height="200" class="image">
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+        </section>
+    </body>
+</html>
